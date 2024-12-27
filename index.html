@@ -1,0 +1,129 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Good Luck, Mahi!</title>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+      <style>
+        /* Global Styles */
+        body {
+          margin: 0;
+          padding: 0;
+          font-family: 'Poppins', sans-serif;
+          background: linear-gradient(135deg, #f9f9f9, #eaeaea);
+          color: #333;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+          overflow: hidden;
+        }
+    
+        /* Star Animation */
+        .stars {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: radial-gradient(circle, rgba(255,255,255,0.3) 1px, transparent 1px);
+          background-size: 20px 20px;
+          animation: twinkle 4s infinite alternate;
+        }
+    
+        @keyframes twinkle {
+          from { opacity: 0.8; }
+          to { opacity: 1; }
+        }
+    
+        /* Container Styles */
+        .container {
+          max-width: 600px;
+          background: #ffffff;
+          border-radius: 15px;
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+          padding: 30px;
+          z-index: 10;
+          animation: fadeIn 1.5s ease;
+        }
+    
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+    
+        h1 {
+          font-size: 2.5rem;
+          color: #4C1B73;
+        }
+    
+        p {
+          font-size: 1.2rem;
+          color: #555;
+          margin: 15px 0;
+        }
+    
+        .quote {
+          font-size: 1rem;
+          color: #7C4DFF;
+          margin-top: 10px;
+          font-style: italic;
+        }
+    
+        .icon {
+          font-size: 50px;
+          color: #FFCA28;
+          margin-bottom: 20px;
+        }
+    
+        /* Button Styles */
+        .btn {
+          display: inline-block;
+          padding: 12px 30px;
+          font-size: 1rem;
+          color: #fff;
+          background: #4C1B73;
+          border: none;
+          border-radius: 25px;
+          text-decoration: none;
+          margin-top: 20px;
+          transition: transform 0.3s ease, background-color 0.3s ease;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    
+        .btn:hover {
+          background: #673AB7;
+          transform: translateY(-3px);
+        }
+    
+        footer {
+          margin-top: 20px;
+          font-size: 0.9rem;
+          color: #aaa;
+        }
+    
+        footer a {
+          text-decoration: none;
+          color: #4C1B73;
+        }
+    
+        footer a:hover {
+          text-decoration: underline;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="stars"></div>
+      <div class="container">
+        <div class="icon">🌟</div>
+        <h1>Good Luck, Mahi!</h1>
+        <p>You're smart, capable, and ready for this! Believe in yourself and go shine. 🥰</p>
+        <p class="quote">"Success is the sum of small efforts, repeated day in and day out."</p>
+        <a href="#" class="btn">You Can Do It!</a>
+      </div>
+      <footer>
+        Made with ❤️ by <a href="#">Robiiiii</a>
+      </footer>
+    </body>
+    </html>
